@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>คนคุยรู้จักเราดีแค่ไหน? 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="decor heart-one">💗</div>
+  <div class="decor star-one">✨</div>
+  <div class="decor flower-one">🌷</div>
+  <div class="decor star-two">⭐</div>
+
+  <main class="app">
+    <section id="startScreen" class="card start-screen">
+      <div class="logo">💗</div>
+      <h1>คนคุยรู้จักเราดีแค่ไหน?</h1>
+      <p>ควิซน่ารัก ๆ ที่จะทดสอบว่า<br>คนคุยของคุณรู้จักคุณมากแค่ไหน 🌷</p>
+      <button id="startBtn" class="main-btn">เริ่มเล่นกันเลย! ✨</button>
+      <small>10 คำถาม • เลือกคำตอบที่คิดว่าใช่ที่สุด</small>
+    </section>
+
+    <section id="quizScreen" class="card quiz-screen hidden">
+      <div class="quiz-top">
+        <span id="questionNumber">ข้อ 1 / 10</span>
+        <span id="scoreText">💗 0 คะแนน</span>
+      </div>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <h2 id="question"></h2>
+      <div id="options"></div>
+
+      <div id="feedback" class="feedback"></div>
+      <button id="nextBtn" class="next-btn hidden">ข้อต่อไป →</button>
+    </section>
+
+    <section id="resultScreen" class="card result-screen hidden">
+      <div class="result-icon">🎀</div>
+      <span class="badge">ผลการทดสอบ</span>
+      <div id="finalScore" class="final-score">0/10</div>
+      <h2 id="resultTitle"></h2>
+      <p id="resultDetail"></p>
+      <button id="restartBtn" class="main-btn">เล่นใหม่อีกครั้ง 💕</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
